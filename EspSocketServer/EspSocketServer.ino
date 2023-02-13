@@ -41,7 +41,7 @@ void loop(){
       packet[len] = '\0';
     }
     UDP.beginPacket(UDP.remoteIP(), UDP.remotePort());
-    UDP.print("146");
+    UDP.print(WiFi.localIP());
     UDP.endPacket();
   }
 }
